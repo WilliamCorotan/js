@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Fundamentals</title>
+    <style>
+      body {
+        /* vh  = viewport height */
+        height: 50vh;
+        display: grid;
+        place-items: center;
+        /* 100%, vw, vh */
+        /* px, pt, em, rem */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>JS Fundamentals</h1>
+      <script>
+        // js is a dynamic prog language
+
+        // original way / es5 / hoisting
+        var x = "hello";
+        var y = 12;
+        function func() {
+          return this;
+        }
+
+        // modern way / es6
+        const a = "world";
+        let b = 13;
+        const func2 = () => {
+          return this;
+        }; // arrow functions
+
+        // console.log(func());
+        // console.log("-----------------");
+        // console.log(func2());
+
+        // if, switches , loops (for, do while, while)
+
+        // if (condition) {
+        // } else if (condition) {
+        // } else {
+        // }
+
+        // const day = "Monday";
+        // switch (day) {
+        //   case "Monday":
+        //     break;
+
+        //   default:
+        //     break;
+        // }
+
+        // for (let i = 0; i < 3; i++) {}
+
+        // while (true) {}
+
+        // do {} while (true);
+
+        // DRY - dont repeat yourself
+
+        // ----------FUNCTIONS------------
+        const lastName = "corotan";
+
+        function c(params) {
+          const name = "william";
+          //   console.log(params, name, lastName);
+        }
+
+        // const c2 = (params) => console.log(params);
+
+        function sum(num1, num2) {
+          return num1 + num2;
+        }
+
+        const sum2 = (num1, num2) => num1 + num2;
+        // c2("im here >>");
+        // console.log(sum(18, 16));
+        // console.log(sum2("hello", "world"));
+
+        //----------------OBJECTS-----------------
+        // class Person {
+        //     private name = 'william'
+        //     getName() {
+        //         return this.name
+        //     }
+        //     setName(newName) {
+        //         this.name = newName
+        //     }
+
+        // }
+        // const  person1 = new Person()
+
+        // person1.getName();
+        // person1.setName("Anthony");
+
+        const obj = {
+          firstName: "william",
+          lastName: "Corotan",
+          sayHi() {
+            return `Hi, im  ${this.firstName}`;
+            return "hi, im " + this.firstName;
+          },
+        };
+        const { firstName } = obj;
+        console.log(firstName);
+        console.log(obj.lastName);
+
+        const arr = [1, 2, 3, "william"];
+
+        if (time < 10) {
+          // code this
+        } else if (time > 10) {
+        } else {
+          // code that
+        }
+
+        time < 10
+          ? console.log("if")
+          : time > 10
+          ? console.log("inside else if")
+          : console.log("else");
+        // console.log(arr);
+      </script>
+    </div>
+  </body>
+</html>
